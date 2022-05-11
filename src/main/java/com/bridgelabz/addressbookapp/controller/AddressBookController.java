@@ -24,32 +24,28 @@ public class AddressBookController {
 
     @GetMapping("/get")
     public ResponseEntity<ResponseDTO> getAddressbookData() {
-        List<AddressbookData> addressbookDataList = null;
-        addressbookDataList = addressbooService.getAddressbookData();
+        List<AddressbookData> addressbookDataList = addressbooService.getAddressbookData();
         ResponseDTO responseDTO = new ResponseDTO("Get call success", addressbookDataList);
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
     @GetMapping("/get/{personId}")
     public ResponseEntity<ResponseDTO> getAddressbookData(@PathVariable(value = "personId") int personId) {
-        AddressbookData addressbookData = null;
-        addressbookData = addressbooService.getAddressbookDataById(personId);
+        AddressbookData addressbookData = addressbooService.getAddressbookDataById(personId);
         ResponseDTO responseDTO = new ResponseDTO("Get Call Success for id is successfully", addressbookData);
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDTO> addAddressbookData(@RequestBody AddressbookDTO addressbookDTO) {
-        AddressbookData addressbookData = null;
-        addressbookData = addressbooService.createAddressbooData(addressbookDTO);
+        AddressbookData addressbookData = addressbooService.createAddressbooData(addressbookDTO);
         ResponseDTO responseDTO = new ResponseDTO("Created Employee Payroll Data successfully ", addressbookData);
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
     @PutMapping("/update/{personId}")
     public ResponseEntity<ResponseDTO> updateAddressbookData(@PathVariable int personId, @RequestBody AddressbookDTO addressbookDTO) {
-        AddressbookData addressbookData = null;
-        addressbookData = addressbooService.updateAddressbookData(personId, addressbookDTO);
+        AddressbookData addressbookData = addressbooService.updateAddressbookData(personId, addressbookDTO);
         ResponseDTO responseDTO = new ResponseDTO("Updated Employee Payroll data successfully ", addressbookData);
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
