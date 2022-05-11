@@ -2,7 +2,6 @@ package com.bridgelabz.addressbookapp.service;
 
 import com.bridgelabz.addressbookapp.dto.AddressbookDTO;
 import com.bridgelabz.addressbookapp.model.AddressbookData;
-
 import java.util.List;
 
 public interface IAddressBookService {

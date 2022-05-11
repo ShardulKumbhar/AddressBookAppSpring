@@ -16,8 +16,17 @@ import java.util.List;
 @Slf4j
 public class AddressBookServiceImpl implements IAddressBookService {
 
+    /**
+     * AutoWired Interface
+     */
     @Autowired
     private IAdderssBookRepository addressBookRepository;
+
+    /**
+     * Method to store data
+     * @param addressbookDTO
+     * @return
+     */
     @Override
     public AddressbookData createAddressbooData(AddressbookDTO addressbookDTO) {
         AddressbookData addressbookData = new AddressbookData(addressbookDTO);
@@ -25,11 +34,21 @@ public class AddressBookServiceImpl implements IAddressBookService {
         return addressBookRepository.save(addressbookData);
     }
 
+    /**
+     * Method to checkall data
+     * @return
+     */
+
     @Override
     public List<AddressbookData> getAddressbookData() {
         return addressBookRepository.findAll();
     }
 
+    /**
+     * Method to check data by id
+     * @param personId
+     * @return
+     */
     @Override
     public AddressbookData getAddressbookDataById(int personId) {
         log.info("Getting AddressBook Data By ID");
@@ -37,6 +56,12 @@ public class AddressBookServiceImpl implements IAddressBookService {
                 .orElseThrow(() -> new AddressBookException(("Person WIth personId "+personId+" does not exist." )));
     }
 
+    /**
+     * method to update data
+     * @param personId
+     * @param addressbookDTO
+     * @return
+     */
     @Override
     public AddressbookData updateAddressbookData(int personId,@Valid AddressbookDTO addressbookDTO) {
         AddressbookData addressbookData = this.getAddressbookDataById((personId));
@@ -44,6 +69,10 @@ public class AddressBookServiceImpl implements IAddressBookService {
         return addressBookRepository.save(addressbookData);
     }
 
+    /**
+     * method to delete data
+     * @param personId
+     */
     @Override
     public void deleteAddressbooData(int personId) {
        AddressbookData addressbookData = this.getAddressbookDataById(personId);
