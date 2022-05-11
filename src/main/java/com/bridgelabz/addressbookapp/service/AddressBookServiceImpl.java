@@ -5,6 +5,7 @@ import com.bridgelabz.addressbookapp.model.AddressbookData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,14 +29,14 @@ public class AddressBookServiceImpl implements IAddressBookService {
 
     @Override
     public AddressbookData createAddressbooData(AddressbookDTO addressbookDTO) {
-        log.info("Created a new address book data");
+        log.info("Adding a new address book data");
         AddressbookData addressbookData = new AddressbookData(addressbookDataList.size() + 1, addressbookDTO);
         addressbookDataList.add(addressbookData);
         return addressbookData;
     }
 
     @Override
-    public AddressbookData updateAddressbookData(int personId, AddressbookDTO addressbookDTO) {
+    public AddressbookData updateAddressbookData(int personId, @Valid AddressbookDTO addressbookDTO) {
         log.info("Updating/Editing The AddressBook Data of Given ID");
         AddressbookData addressbookData = this.getAddressbookDataById(personId);
         addressbookData.setName(addressbookDTO.name);
