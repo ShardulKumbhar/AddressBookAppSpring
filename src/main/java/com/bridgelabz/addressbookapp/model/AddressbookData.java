@@ -1,13 +1,9 @@
 package com.bridgelabz.addressbookapp.model;
 
 import com.bridgelabz.addressbookapp.dto.AddressbookDTO;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
-
 @Entity
 @Table(name = "Contacts")
 @NoArgsConstructor
@@ -28,6 +24,10 @@ public @Data class AddressbookData {
     private String email;
 
     public AddressbookData(AddressbookDTO addressbookDTO) {
+        this.updateAddressBookData(addressbookDTO);
+    }
+
+    public void updateAddressBookData(AddressbookDTO addressbookDTO) {
         this.personId = personId;
         this.name = addressbookDTO.name;
         this.city = addressbookDTO.city;

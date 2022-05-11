@@ -12,7 +12,7 @@ public class AddressbookAppApplication {
 
 		SpringApplication.run(AddressbookAppApplication.class, args);
 		System.out.println("***********Welcome to Addressbook App*************");
-	     log.info("AddressBook app Started");
+		log.info("AddressBook app started");
 	}
 
 }
