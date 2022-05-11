@@ -6,22 +6,28 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Data
+@Entity
+@Table(name = "Contacts")
 @NoArgsConstructor
-public class AddressbookData {
+public @Data class AddressbookData {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "person_id")
     private int personId;
+    @Column(name = "name")
     private String name;
     private String city;
     private String state;
     private String zipCode;
+    @Column(name = "Phone_Number")
     private String phNumber;
+    @Column(name = "Email_Id")
     private String email;
 
-    public AddressbookData(int personId, AddressbookDTO addressbookDTO) {
+    public AddressbookData(AddressbookDTO addressbookDTO) {
         this.personId = personId;
         this.name = addressbookDTO.name;
         this.city = addressbookDTO.city;

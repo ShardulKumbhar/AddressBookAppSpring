@@ -4,6 +4,7 @@ import com.bridgelabz.addressbookapp.dto.AddressbookDTO;
 import com.bridgelabz.addressbookapp.dto.ResponseDTO;
 import com.bridgelabz.addressbookapp.model.AddressbookData;
 import com.bridgelabz.addressbookapp.service.IAddressBookService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/addBook")
+@Slf4j
 public class AddressBookController {
 
     /**
@@ -39,6 +41,7 @@ public class AddressBookController {
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDTO> addAddressbookData(@Valid @RequestBody AddressbookDTO addressbookDTO) {
+        log.debug("AddressBook DTO: "+addressbookDTO.toString());
         AddressbookData addressbookData = addressbooService.createAddressbooData(addressbookDTO);
         ResponseDTO responseDTO = new ResponseDTO("Created Employee Payroll Data successfully ", addressbookData);
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
