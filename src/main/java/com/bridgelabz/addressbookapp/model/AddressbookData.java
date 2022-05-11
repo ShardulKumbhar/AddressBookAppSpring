@@ -13,6 +13,8 @@ public @Data class AddressbookData {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "person_id")
     private int personId;
+
+    
     @Column(name = "name")
     private String name;
     private String city;
