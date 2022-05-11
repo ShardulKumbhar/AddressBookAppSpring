@@ -28,7 +28,7 @@ public class AddressBookServiceImpl implements IAddressBookService {
     }
 
     @Override
-    public AddressbookData createAddressbooData(AddressbookDTO addressbookDTO) {
+    public AddressbookData createAddressbooData(@Valid AddressbookDTO addressbookDTO) {
         log.info("Adding a new address book data");
         AddressbookData addressbookData = new AddressbookData(addressbookDataList.size() + 1, addressbookDTO);
         addressbookDataList.add(addressbookData);
