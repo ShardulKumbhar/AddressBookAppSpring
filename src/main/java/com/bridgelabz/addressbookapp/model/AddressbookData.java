@@ -1,5 +1,6 @@
 package com.bridgelabz.addressbookapp.model;
-import dto.AddressbookDTO;
+
+import com.bridgelabz.addressbookapp.dto.AddressbookDTO;
 import lombok.Getter;
 import lombok.Setter;
 
