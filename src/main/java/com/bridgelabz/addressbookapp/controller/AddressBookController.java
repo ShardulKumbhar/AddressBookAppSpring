@@ -33,7 +33,7 @@ public class AddressBookController {
      * @return
      */
     @PostMapping("/create")
-    public ResponseEntity<ResponseDTO> addAddressbookData(@RequestBody AddressbookDTO addressbookDTO) {
+    public ResponseEntity<ResponseDTO> addAddressbookData(@Valid @RequestBody AddressbookDTO addressbookDTO) {
         log.debug("AddressBook DTO: "+addressbookDTO.toString());
         AddressbookData addressbookData = addressbooService.createAddressbooData(addressbookDTO);
         ResponseDTO responseDTO = new ResponseDTO("Created Employee Payroll Data successfully ", addressbookData);
@@ -90,5 +90,18 @@ public class AddressBookController {
         addressbooService.deleteAddressbooData(personId);
         ResponseDTO responseDTO = new ResponseDTO("Deleted data successfully", "person id: " + personId);
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
+    }
+
+    /**
+     * htttp method to get by city name
+     * http://localhost:8080/addressBook/get/city/pune
+     * @param city
+     * @return
+     */
+    @GetMapping("/get/city/{city}")
+    public ResponseEntity<ResponseDTO> getByCity(@PathVariable ("city")  String city){
+        List<AddressbookData> addressbookData = addressbooService.getByCity(city);
+        ResponseDTO responseDTO = new ResponseDTO("Get call by city success", addressbookData);
+        return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }
 }

@@ -1,0 +1,50 @@
+2022-05-17 19:13:40.850  INFO 16892 --- [restartedMain] c.b.a.AddressbookAppApplication          : Starting AddressbookAppApplication using Java 11.0.14.1 on SHARDUL with PID 16892 (C:\Users\shard\IdeaProjects\0FinalBook\AddressBookApp\target\classes started by shard in C:\Users\shard\IdeaProjects\0FinalBook\AddressBookApp)
+2022-05-17 19:13:40.867 DEBUG 16892 --- [restartedMain] c.b.a.AddressbookAppApplication          : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-17 19:13:40.869  INFO 16892 --- [restartedMain] c.b.a.AddressbookAppApplication          : The following 1 profile is active: "DEV"
+2022-05-17 19:13:40.979  INFO 16892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-17 19:13:40.979  INFO 16892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-17 19:13:42.453  INFO 16892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-17 19:13:42.559  INFO 16892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2022-05-17 19:13:44.012  INFO 16892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-17 19:13:44.033  INFO 16892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-17 19:13:44.034  INFO 16892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-17 19:13:44.196  INFO 16892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-17 19:13:44.197  INFO 16892 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3217 ms
+2022-05-17 19:13:45.200  INFO 16892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-17 19:13:45.768  INFO 16892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-17 19:13:47.258  INFO 16892 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-17 19:13:47.970  WARN 16892 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-17 19:13:48.491  INFO 16892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-17 19:13:48.540  INFO 16892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-17 19:13:48.553  INFO 16892 --- [restartedMain] c.b.a.AddressbookAppApplication          : Started AddressbookAppApplication in 8.701 seconds (JVM running for 10.07)
+2022-05-17 19:13:48.560  INFO 16892 --- [restartedMain] c.b.a.AddressbookAppApplication          : Addressbook App Started in DEV Environment
+2022-05-17 19:13:48.561  INFO 16892 --- [restartedMain] c.b.a.AddressbookAppApplication          : Addressbook App started
+2022-05-17 19:15:01.005  INFO 16892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 19:16:26.773  INFO 16892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-17 19:16:26.776  INFO 16892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-17 19:16:26.792  INFO 16892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-17 19:19:01.061  INFO 17520 --- [restartedMain] c.b.a.AddressbookAppApplication          : Starting AddressbookAppApplication using Java 11.0.14.1 on SHARDUL with PID 17520 (C:\Users\shard\IdeaProjects\0FinalBook\AddressBookApp\target\classes started by shard in C:\Users\shard\IdeaProjects\0FinalBook\AddressBookApp)
+2022-05-17 19:19:01.063 DEBUG 17520 --- [restartedMain] c.b.a.AddressbookAppApplication          : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-17 19:19:01.064  INFO 17520 --- [restartedMain] c.b.a.AddressbookAppApplication          : The following 1 profile is active: "DEV"
+2022-05-17 19:19:01.227  INFO 17520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-17 19:19:01.227  INFO 17520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-17 19:19:03.044  INFO 17520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-17 19:19:03.213  INFO 17520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interfaces.
+2022-05-17 19:19:04.918  INFO 17520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-17 19:19:04.965  INFO 17520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-17 19:19:04.966  INFO 17520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-17 19:19:05.238  INFO 17520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-17 19:19:05.238  INFO 17520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4010 ms
+2022-05-17 19:19:06.240  INFO 17520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-17 19:19:06.716  INFO 17520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-17 19:19:07.907  INFO 17520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-17 19:19:08.499  WARN 17520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-17 19:19:09.005  INFO 17520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-17 19:19:09.076  INFO 17520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-17 19:19:09.088  INFO 17520 --- [restartedMain] c.b.a.AddressbookAppApplication          : Started AddressbookAppApplication in 9.114 seconds (JVM running for 10.114)
+2022-05-17 19:19:09.094  INFO 17520 --- [restartedMain] c.b.a.AddressbookAppApplication          : Addressbook App Started in DEV Environment
+2022-05-17 19:19:09.094  INFO 17520 --- [restartedMain] c.b.a.AddressbookAppApplication          : Addressbook App started
+2022-05-17 19:19:16.381  INFO 17520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 19:19:31.372  INFO 17520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-17 19:19:31.376  INFO 17520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-17 19:19:31.393  INFO 17520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
