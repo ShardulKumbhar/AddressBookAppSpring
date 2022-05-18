@@ -3,14 +3,11 @@ package com.bridgelabz.addressbookapp.dto;
 
 import lombok.Data;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 
 public @Data class AddressbookDTO {
     /**
-     * Created class of entity with Validation
+     * Created class of entity with pplying Validation
      */
 
     @NotNull(message = "ERROR: Name cannot be null!!!")
@@ -30,6 +27,7 @@ public @Data class AddressbookDTO {
 
     @NotNull(message = "ERROR: ZipCode Cannot be null!!")
     @Min(value = 100000, message = "ERROR: Please enter 6 Zip Code")
+    @Max(value = 1000000 , message = "ERROR: Please enter 6 Zip Code")
     public String zipCode;
 
 

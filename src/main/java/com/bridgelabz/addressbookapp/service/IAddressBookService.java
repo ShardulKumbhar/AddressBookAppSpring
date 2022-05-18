@@ -18,4 +18,16 @@ public interface IAddressBookService {
     AddressbookData getContactByName(String name);
 
     List<AddressbookData> getByCity(String city);
+
+    List<AddressbookData> getByState(String state);
+
+    List<AddressbookData> getByName(String zipCode);
+
+    List<AddressbookData> getByZipCode(String zipCode);
+
+    List<AddressbookData> getByEmail(String email);
+
+    List<AddressbookData> getByNumber(String phNumber);
+
+    List<AddressbookData> sortByCity();
 }
